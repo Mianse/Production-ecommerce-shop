@@ -1,7 +1,7 @@
 
 import categoryModel from '../models/categoryModel.js'
 import slugify from 'slugify'
-export const CreateCategoryController = async(req,res)=>{
+export const createCategoryController = async(req,res)=>{
     try {
         const {name} = req.body
         if(!name){
@@ -96,7 +96,7 @@ export const singleCategoryController = async (req,res)=>{
 }
 //delete category
 
-export const DeleteCategoryController= async (req,res)=>{
+export const deleteCategoryController= async (req,res)=>{
     try {
         const {id} = req.params
 
