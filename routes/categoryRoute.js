@@ -1,10 +1,10 @@
 import express from 'express'
 import {isAdmin, requiresignIn} from '../middleware/authMiddleware.js'
-import {createCategoryController,updateCategoryController,categoryController,singleCategoryController,deleteCategoryController} from '../controllers/CreateCategoryController.js'
+import {CreateCategoryController,updateCategoryController,categoryController,singleCategoryController,deleteCategoryController} from '../controllers/CreateCategoryController.js'
 
 const router = express.Router()
 //routes
-router.post('/create-category',requiresignIn,isAdmin,createCategoryController)
+router.post('/create-category',requiresignIn,isAdmin,CreateCategoryController)
 // update categories
 router.put('/update-category/:id',requiresignIn,isAdmin,updateCategoryController)
 //get all categories
