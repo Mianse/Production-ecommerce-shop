@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 import connectDB from './config/db.js'
 import authRoute from './routes/authRoute.js'
-import cors from 'cors'
+import cors from  'cors'
 import categoryRoute from './routes/categoryRoute.js'
 import productRoute from './routes/productRoute.js'
 import path from 'path'
