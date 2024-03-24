@@ -1,6 +1,6 @@
 import express from 'express'
 import {isAdmin, requiresignIn} from '../middleware/authMiddleware.js'
-import {CreateCategoryController,updateCategoryController,categoryController,singleCategoryController,deleteCategoryController} from '../controllers/createCategoryController.js'
+import {createCategoryController,updateCategoryController,categoryController,singleCategoryController,deleteCategoryController} from '../controllers/createCategoryController.js'
 
 const router = express.Router()
 //routes
